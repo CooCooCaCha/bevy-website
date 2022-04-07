@@ -1,7 +1,8 @@
 #!/bin/sh
 
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
-source $HOME/.cargo/env
+# curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+# source $HOME/.cargo/env
+rustup toolchain install stable
 
 cd generate-assets
 ./generate_assets.sh
